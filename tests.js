@@ -114,3 +114,120 @@ describe('isFive(null)', function () {
         expect(isFive(null)).toBe(false);
     });
 });
+
+describe('isFive(6)', function () {
+    it('should return false', function () {
+        expect(isFive(6)).toBe(false);
+    });
+});
+
+describe('isFive("6")', function () {
+    it('should return false', function () {
+        expect(isFive("6")).toBe(false);
+    });
+});
+
+describe('isEven', function () {
+    it('should be a defined function', function () {
+        expect(typeof isEven).toBe('function');
+    });
+    it('should return a boolean', function () {
+        expect(typeof isEven()).toBe('boolean');
+    });
+});
+
+describe('isEven(2)', function () {
+    it('should return true', function () {
+        expect(isEven(2)).toBe(true);
+    });
+});
+
+describe('isEven(-4)', function () {
+    it('should return true', function () {
+        expect(isEven(-4)).toBe(true);
+    });
+});
+
+describe('isEven(3)', function () {
+    it('should return false', function () {
+        expect(isEven(3)).toBe(false);
+    });
+});
+
+describe('isEven("banana")', function () {
+    it('should return false', function () {
+        expect(isEven("banana")).toBe(false);
+    });
+});
+
+describe('isEven("8")', function () {
+    it('should return true', function () {
+        expect(isEven("8")).toBe(true);
+    });
+});
+
+describe('isEven("7")', function () {
+    it('should return false', function () {
+        expect(isEven("7")).toBe(false);
+    });
+});
+
+describe('isEven(Infinity)', function () {
+    it('should return false', function () {
+        expect(isEven(Infinity)).toBe(false);
+    });
+});
+
+describe('isEven(true)', function () {
+    it('should return false', function () {
+        expect(isEven(true)).toBe(false);
+    });
+});
+
+describe('isEven(false)', function () {
+    it('should return false', function () {
+        expect(isEven(false)).toBe(false);
+    });
+});
+
+describe('isEven(2.8)', function () {
+    it('should return false', function () {
+        expect(isEven(2.8)).toBe(false);
+    });
+});
+
+describe('isEven(2.7)', function () {
+    it('should return false', function () {
+        expect(isEven(2.7)).toBe(false);
+    });
+});
+
+describe('isEven("2.8")', function () {
+    it('should return false', function () {
+        expect(isEven("2.8")).toBe(false);
+    });
+});
+
+describe('isEven("")', function () {
+    it('should return false', function () {
+        expect(isEven("")).toBe(false);
+    });
+});
+
+describe('isEven(undefined)', function () {
+    it('should return false', function () {
+        expect(isEven(undefined)).toBe(false);
+    });
+});
+
+describe('isEven()', function () {
+    it('should return false', function () {
+        expect(isEven()).toBe(false);
+    });
+});
+
+describe('isEven(null)', function () {
+    it('should return false', function () {
+        expect(isEven(null)).toBe(false);
+    });
+});

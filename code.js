@@ -14,3 +14,12 @@ const sayHello = function(name) {
 const isFive = function(number) {
     return number == 5;
 }
+
+const isEven = function(number) {
+    if ((typeof number === "number" || typeof number === "string") && number !== "") {
+        return number % 2 === 0;
+    } else {
+        return false;
+    }
+}
+
