@@ -82,3 +82,35 @@ describe('sayHello(null)', function () {
         expect(sayHello(null)).toBe("Hello, World!");
     });
 });
+
+describe('isFive', function () {
+    it('should be a defined function', function () {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return a boolean', function () { expect(typeof isFive()).toBe("boolean");
+    });
+});
+
+describe('isFive(5)', function () {
+    it('should return true', function () {
+        expect(isFive(5)).toBe(true);
+    });
+});
+
+describe('isFive("5")', function () {
+    it('should return true', function () {
+        expect(isFive("5")).toBe(true);
+    });
+});
+
+describe('isFive()', function () {
+    it('should return false', function () {
+        expect(isFive()).toBe(false);
+    });
+});
+
+describe('isFive(null)', function () {
+    it('should return false', function () {
+        expect(isFive(null)).toBe(false);
+    });
+});
