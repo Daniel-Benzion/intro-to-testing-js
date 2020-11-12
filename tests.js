@@ -318,3 +318,51 @@ describe('isVowel(null)', function () {
         expect(isVowel(null)).toBe(false);
     });
 });
+
+describe('add', function () {
+    it('should be a defined function', function () {
+        expect(typeof add).toBe('function');
+    });
+});
+
+describe('add(2, 3)', function () {
+    it('should return 5', function () {
+        expect(add(2, 3)).toBe(5);
+    });
+});
+
+describe('add(-3, -9)', function () {
+    it('should return -12', function () {
+        expect(add(-3, -9)).toBe(-12);
+    });
+});
+
+describe('add("5", 6)', function () {
+    it('should return 11', function () {
+        expect(add("5", 6)).toBe(11);
+    });
+});
+
+describe('add("-4", "10")', function () {
+    it('should return 6', function () {
+        expect(add("-4", "10")).toBe(6);
+    });
+});
+
+describe('add("banana", "split")', function () {
+    it('should return NaN', function () {
+        expect(add("banana", "split")).toBe("NaN");
+    });
+});
+
+describe('add(2, "apples")', function () {
+    it('should return NaN', function () {
+        expect(add(2, "apples")).toBe("NaN");
+    });
+});
+
+describe('add()', function () {
+    it('should return NaN', function () {
+        expect(add()).toBe("NaN");
+    });
+});
