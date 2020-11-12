@@ -8,6 +8,9 @@ const sayHello = function(n) {
         case "Alex":
             return "Hello, Alex!";
             break;
+        case "Pat":
+            return "Hello, Pat!";
+            break;
         default:
             return "Hello, Jane!";
             break;
