@@ -23,3 +23,11 @@ const isEven = function(number) {
     }
 }
 
+const isVowel = function(letter) {
+    const vowels = /[^aeiou]/i
+    if (letter === "") {
+        return false;
+    } else {
+        return !vowels.test(letter);
+    }
+}

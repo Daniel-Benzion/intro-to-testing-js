@@ -231,3 +231,90 @@ describe('isEven(null)', function () {
         expect(isEven(null)).toBe(false);
     });
 });
+
+describe('isVowel', function () {
+    it('should be a defined function', function () {
+        expect(typeof isVowel).toBe('function');
+    });
+    it('should return a boolean', function () {
+        expect(typeof isVowel()).toBe('boolean');
+    });
+});
+
+describe('isVowel("a")', function () {
+    it('should return true', function () {
+        expect(isVowel("a")).toBe(true);
+    });
+});
+
+describe('isVowel("A")', function () {
+    it('should return true', function () {
+        expect(isVowel("A")).toBe(true);
+    });
+});
+
+describe('isVowel("y")', function () {
+    it('should return false', function () {
+        expect(isVowel("y")).toBe(false);
+    });
+});
+
+describe('isVowel(4)', function () {
+    it('should return false', function () {
+        expect(isVowel(4)).toBe(false);
+    });
+});
+
+describe('isVowel("4")', function () {
+    it('should return false', function () {
+        expect(isVowel("4")).toBe(false);
+    });
+});
+
+describe('isVowel(true)', function () {
+    it('should return false', function () {
+        expect(isVowel(true)).toBe(false);
+    });
+});
+
+describe('isVowel(false)', function () {
+    it('should return false', function () {
+        expect(isVowel(false)).toBe(false);
+    });
+});
+
+describe('isVowel("banana")', function () {
+    it('should return false', function () {
+        expect(isVowel("banana")).toBe(false);
+    });
+});
+
+describe('isVowel("aardvark")', function () {
+    it('should return false', function () {
+        expect(isVowel("aardvark")).toBe(false);
+    });
+})
+
+describe('isVowel("aaabaaa")', function () {
+    it('should return false', function () {
+        expect(isVowel("aaabaaa")).toBe(false);
+    });
+});
+
+describe('isVowel()', function () {
+    it('should return false', function () {
+        expect(isVowel()).toBe(false);
+    });
+});
+
+describe('isVowel("")', function () {
+    it('should return false', function () {
+        expect(isVowel("")).toBe(false);
+    });
+});
+
+describe('isVowel(null)', function () {
+    it('should return false', function () {
+        expect(isVowel(null)).toBe(false);
+    });
+});
